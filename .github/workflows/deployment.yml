@@ -1,0 +1,17 @@
+name: Workflow Reutilizavel
+
+on:
+  workflow_call:
+    inputs:
+      deploy-env:
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to environment
+        run: |
+          echo "Deploy:  --env ${{ inputs.deploy-env }}"
+        shell: bash

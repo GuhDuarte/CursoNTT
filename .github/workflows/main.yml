@@ -13,3 +13,8 @@ jobs:
         
       - name: Print Hello World 
         run: echo "Hello, World!"
+    
+  deployment:
+    uses: ./github/workflows/deployment.yml@main
+    with:
+      deploy-env: prod
