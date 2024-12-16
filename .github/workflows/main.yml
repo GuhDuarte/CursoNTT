@@ -15,6 +15,6 @@ jobs:
         run: echo "Hello, World!"
     
   deployment:
-    uses: .github/workflows/deployment.yml@main
+    uses: GuhDuarte/CursoNTT./github/workflows/deployment.yml@main
     with:
       deploy-env: prod
